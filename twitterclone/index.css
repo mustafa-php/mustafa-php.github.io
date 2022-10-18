@@ -124,7 +124,7 @@ nav a {
   flex-wrap: wrap;
   align-items: center;
   height: 26.25;
-  padding: 16px 12px;
+  padding: 12px 12px;
   width: max-content;
   height: max-content;
   border-radius: 3rem;
@@ -181,6 +181,10 @@ nav a {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.menu-oge{
+  padding:4px;
 }
 
 .prof-ism {
