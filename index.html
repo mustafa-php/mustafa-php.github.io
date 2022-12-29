@@ -1,6 +1,209 @@
-<a href="https://mustafa-php.github.io/twitterclone/">Twitter Klon</a>
-<p id="demo"></p>
+<!DOCTYPE html>
+<html lang="tr">
 
-<script>
-document.getElementById("demo").innerHTML = document.referrer;
-</script>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgb(62, 0, 127)">
+    <meta name="googlebot" content="notranslate" />
+
+    <meta name="title" content="Mustafa Simşek - Web Geliştirme Uzmanı">
+    <meta name="keywords"
+        content="Mustafa Şimşek, Mustafa Şimşek web geliştirme uzmanı, web geliştirme, web tasarım, web, php geliştirici">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mustafa Şimşek">
+    <title>Mustafa Şimşek - Web Geliştirme Uzmanı</title>
+    <meta name="description" content="Mustafa Şimşek. Tam Yığın Geliştirici; PHP Geliştirici :} ">
+    <link rel="icon" href="/resimler/logo.png">
+    <link rel="image_src" content="/resimler/logo.png">
+    <link rel="canonical" href="https://mustafa-php.github.io/">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Mustafa Şimşek. Tam Yığın Geliştirici; PHP Geliştirici :}">
+    <meta property="og:url" content="https://mustafa-php.github.io/">
+    <meta property="og:site_name" content="Mustafa Şimşek - Web Geliştirme Uzmanı">
+    <meta property="og:image" content="/resimler/logo.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Mustafa Şimşek. Tam Yığın Geliştirici; PHP Geliştirici :}">
+    <meta name="twitter:tittle" content="Mustafa Şimşek - Tam Yığın Geliştirici">
+    <meta name="twitter:image" content="/resimler/logo.png">
+
+    <base href="https://mustafa/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        button {
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        body {
+            margin: 0%;
+            background: #3C4A57;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            background: #1B2330;
+            height: 100vh;
+            width: 20%;
+            filter: drop-shadow(1px 0 5px #161616);
+        }
+
+        main {
+            flex: 0 0 auto;
+            width: 80%;
+            padding: 5rem;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .bir,
+        .iki,
+        .üç {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 2rem;
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 1px 5px #161616);
+            border-radius: 1rem;
+        }
+
+        .bir {
+            z-index: 2;
+            transform: translate(-55%, -55%);
+            background: #1B2330;
+
+        }
+
+        .iki {
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            background: #222B38;
+
+        }
+
+        .üç {
+            z-index: 0;
+            transform: translate(-45%, -45%);
+            background: #2D3845;
+        }
+
+        h1 {
+            font-size: 6rem;
+            line-height: 0%;
+            font-weight: 100;
+            font-family: 'Sacramento', cursive;
+        }
+
+        .mustafasimsekpng {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 0% 50% 50% 0;
+            filter: drop-shadow(0 0 10px rgba(48, 145, 242, 0.5));
+        }
+
+        .kartyonergec {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .kartyonergec button {
+            background: #3C4A57;
+            padding: 1rem;
+            line-height: 0%;
+            width: 40%;
+            margin: .1rem;
+        }
+
+        .logo {
+            height: 10rem;
+            width: 10rem;
+        }
+    </style>
+    <header>
+        <div>
+            <img src="resim/logo.png" class="logo" alt="">
+        </div>
+
+        <div class="kartyonergec">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="bir">
+                <div>
+                    <img src="resim/mustafasimsek.png" class="mustafasimsekpng" alt="">
+                </div>
+                <div>
+                    <h1>Mustafa Şimşek</h1>
+                </div>
+            </div>
+
+            <div class="iki">
+                <div>
+                    <div><img src="" alt=""></div>
+                </div>
+                <div>şablon resimleri</div>
+            </div>
+
+            <div class="üç">
+                <div>
+                    <div><img src="" alt=""></div>
+                </div>
+                <div>iletişim</div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
